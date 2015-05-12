@@ -50,6 +50,11 @@ a:hover {
   padding-bottom: 0.5em;
 }
 
+.post-link {
+  display: block;
+  padding-bottom: 0.5em;
+}
+
 .content {
   width: 79%;
   float: left;
