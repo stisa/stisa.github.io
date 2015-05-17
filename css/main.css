@@ -29,21 +29,20 @@ a:hover {
 }
 
 .main {
-  width: 90%;
-  margin: 1em 5% 0 5%;
+ /* width: 90%;*/
+  margin: 1em 5% 0 0;
 }
 
 
 .sidebar {
-  margin: 3em 10% 1em 0;
+  margin: 3em 15% 1em 0;
   width: 10%;
   float: left;
 }
 
 .fix-sidebar {
-  text-align: right;
   position: fixed;
-  width: 14%;
+  width: 15%;
 }
 .nav-link {
   display: block;
@@ -56,7 +55,13 @@ a:hover {
 }
 
 .content {
-  width: 79%;
+  width: 74%;
   float: left;
   margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 480px)  {
+	.fix-sidebar {
+  		text-align: right;
+	}
 }
