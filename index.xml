@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog by Stisa</title>
-    <link>http://localhost:1313/</link>
+    <link>http://stisa.github.io/</link>
     <description>Recent content on Blog by Stisa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>eu</language>
     <lastBuildDate>Tue, 11 Aug 2015 20:37:26 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://stisa.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About me</title>
-      <link>http://localhost:1313/pages/about/</link>
+      <link>http://stisa.github.io/pages/about/</link>
       <pubDate>Tue, 11 Aug 2015 20:37:26 +0200</pubDate>
       
-      <guid>http://localhost:1313/pages/about/</guid>
+      <guid>http://stisa.github.io/pages/about/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stisa&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;From Italy&lt;/em&gt;&lt;/p&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>Kivy Layout</title>
-      <link>http://localhost:1313/blog/kivy_layout/</link>
+      <link>http://stisa.github.io/blog/kivy_layout/</link>
       <pubDate>Tue, 11 Aug 2015 18:49:26 +0200</pubDate>
       
-      <guid>http://localhost:1313/blog/kivy_layout/</guid>
+      <guid>http://stisa.github.io/blog/kivy_layout/</guid>
       <description>&lt;p&gt;So I&amp;rsquo;ve started messing around with &lt;a href=&#34;http://kivy.org/&#34;&gt;Kivy&lt;/a&gt;, and I was stuck trying to understand just &lt;em&gt;how&lt;/em&gt; the layout thing works when using .kv code.
 And I think I finally understood what I was doing wrong. I was basically setting the layout of the small square that is the default widget size in Kivy so, knowing that, I tried creating the base widget as a layout and it &lt;em&gt;worked&lt;/em&gt; :D&lt;/p&gt;
 
@@ -79,10 +79,10 @@ if __name__ == &#39;__main__&#39;:
     
     <item>
       <title>Unity3D &amp; accelerometer</title>
-      <link>http://localhost:1313/blog/unity_accelerometer/</link>
+      <link>http://stisa.github.io/blog/unity_accelerometer/</link>
       <pubDate>Tue, 08 Jul 2014 18:49:26 +0200</pubDate>
       
-      <guid>http://localhost:1313/blog/unity_accelerometer/</guid>
+      <guid>http://stisa.github.io/blog/unity_accelerometer/</guid>
       <description>&lt;p&gt;You know that feeling when you spend ours thinking about an issue, and you finally understand something &lt;strong&gt;very&lt;/strong&gt; simple was missing the whole time? Well, I know that feeling very well.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;  accel = Mathf.Round(Mathf.Sqrt(
