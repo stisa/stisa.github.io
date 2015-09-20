@@ -17,12 +17,12 @@ a {
   display: none;
 }
 
-.sidebar:hover > .menu  {
+.sidebar:hover > .menu, .sidebar:active > .menu  {
   display: block;
   padding-bottom: 1em;
 }
 
-.menu:hover {
+.menu:hover,.menu:active {
   display: block;
   padding-bottom: 1em;
 }
