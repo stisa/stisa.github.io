@@ -7,6 +7,12 @@ a {
   text-decoration: none;
 }
 
+code {
+    padding: 1em 0 1em 0;
+    display: block;
+    background-color: lightGreen;
+}
+
 .sidebar {
   padding: 0.1em;
   padding-right: 1em;
