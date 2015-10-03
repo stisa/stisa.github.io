@@ -8,12 +8,7 @@ a {
 }
 
 code {
-  background-color: lightGreen;
-}
-
-pre code {
-    padding: 1em 0 1em 0;
-    display: block;
+  background-color: #f5f2f0;
 }
 
 .sidebar {
