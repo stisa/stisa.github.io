@@ -36,36 +36,35 @@ And I think I finally understood what I was doing wrong. I was basically setting
 
 <p>Python code:</p>
 
-<pre><code>from kivy.app import App
-from kivy.uix.gridlayout import GridLayout
+<pre><code class="language-python">	from kivy.app import App
+	from kivy.uix.gridlayout import GridLayout
 
-class TestApp(App):
-    def build(self):
-        root = Root()
-        return root
+	class TestApp(App):
+		def build(self):
+			root = Root()
+			return root
 
-# define the main widget as a GridLayout or any other layout of your choice     
-class Root(GridLayout):
-    pass
+	# define the main widget as a GridLayout or any other layout of your choice		
+	class Root(GridLayout):
+	    pass
 
-if __name__ == '__main__':
-    TestApp().run()  
+	if __name__ == '__main__':
+		TestApp().run()  
 </code></pre>
 
 <p>Kv code:</p>
 
-<pre><code>#:kivy 1.8.0
+<pre><code class="language-python">	#:kivy 1.8.0
+	&lt;Root&gt;:
+	# define layout variables
+		cols: 2
 
-&lt;Root&gt;:
-# define layout variables
-    cols: 2
-
-    Label:
-        font_size: 70
-        text: &quot;Test&quot;
-    Label:
-        font_size: 70
-        text: &quot;Test&quot;
+		Label:
+			font_size: 70
+			text: &quot;Test&quot;
+		Label:
+			font_size: 70
+			text: &quot;Test&quot;
 </code></pre>
 
 <p>Result:</p>

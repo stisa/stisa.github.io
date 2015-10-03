@@ -29,7 +29,7 @@ This gave me the option of using a simple script to copy the output of the build
 
 &lt;p&gt;To use hooks, you have to add them to your &lt;code&gt;project.flow&lt;/code&gt; :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;  build : {
+&lt;pre&gt;&lt;code class=&#34;language-clike&#34;&gt;  build : {
     dependencies : {
       //your dependencies
     },
@@ -157,36 +157,35 @@ And I think I finally understood what I was doing wrong. I was basically setting
 
 &lt;p&gt;Python code:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;from kivy.app import App
-from kivy.uix.gridlayout import GridLayout
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;	from kivy.app import App
+	from kivy.uix.gridlayout import GridLayout
 
-class TestApp(App):
-    def build(self):
-        root = Root()
-        return root
+	class TestApp(App):
+		def build(self):
+			root = Root()
+			return root
 
-# define the main widget as a GridLayout or any other layout of your choice     
-class Root(GridLayout):
-    pass
+	# define the main widget as a GridLayout or any other layout of your choice		
+	class Root(GridLayout):
+	    pass
 
-if __name__ == &#39;__main__&#39;:
-    TestApp().run()  
+	if __name__ == &#39;__main__&#39;:
+		TestApp().run()  
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Kv code:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;#:kivy 1.8.0
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;	#:kivy 1.8.0
+	&amp;lt;Root&amp;gt;:
+	# define layout variables
+		cols: 2
 
-&amp;lt;Root&amp;gt;:
-# define layout variables
-    cols: 2
-
-    Label:
-        font_size: 70
-        text: &amp;quot;Test&amp;quot;
-    Label:
-        font_size: 70
-        text: &amp;quot;Test&amp;quot;
+		Label:
+			font_size: 70
+			text: &amp;quot;Test&amp;quot;
+		Label:
+			font_size: 70
+			text: &amp;quot;Test&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Result:&lt;/p&gt;
@@ -204,7 +203,7 @@ if __name__ == &#39;__main__&#39;:
       <guid>http://silvio.tisato.me/blog/unity_accelerometer/</guid>
       <description>&lt;p&gt;You know that feeling when you spend ours thinking about an issue, and you finally understand something &lt;strong&gt;very&lt;/strong&gt; simple was missing the whole time? Well, I know that feeling very well.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;  accel = Mathf.Round(Mathf.Sqrt(
+&lt;pre&gt;&lt;code class=&#34;language-clike&#34;&gt;  accel = Mathf.Round(Mathf.Sqrt(
     (Input.acceleration.x *Input.acceleration.x) +  
     (Input.acceleration.z * Input.acceleration.z) +  
     (Input.acceleration.y*Input.acceleration.y)
