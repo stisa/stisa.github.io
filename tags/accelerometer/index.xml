@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accelerometer on Blog by Stisa</title>
+    <link>http://silvio.tisato.me/tags/accelerometer/</link>
+    <description>Recent content in Accelerometer on Blog by Stisa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>eu</language>
+    <lastBuildDate>Tue, 08 Jul 2014 18:49:26 +0200</lastBuildDate>
+    <atom:link href="http://silvio.tisato.me/tags/accelerometer/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unity3D &amp; accelerometer</title>
+      <link>http://silvio.tisato.me/blog/unity_accelerometer/</link>
+      <pubDate>Tue, 08 Jul 2014 18:49:26 +0200</pubDate>
+      
+      <guid>http://silvio.tisato.me/blog/unity_accelerometer/</guid>
+      <description>&lt;p&gt;You know that feeling when you spend ours thinking about an issue, and you finally understand something &lt;strong&gt;very&lt;/strong&gt; simple was missing the whole time? Well, I know that feeling very well.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-clike&#34;&gt;  accel = Mathf.Round(Mathf.Sqrt(
+    (Input.acceleration.x *Input.acceleration.x) +  
+    (Input.acceleration.z * Input.acceleration.z) +  
+    (Input.acceleration.y*Input.acceleration.y)
+  ));  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Outputted 0. Zero. Always, even when shaking the phone. And then I realized &lt;code&gt;Input.acceleration&lt;/code&gt; gives a value between 0 and 1, and then rounding down that number always ended up to zero.&lt;/p&gt;
+
+&lt;p&gt;Next time, I might read documentation a bit more carefully, although I didn&amp;rsquo;t find it mentioned on the Unity docs.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
