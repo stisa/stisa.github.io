@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Haxe on Blog by Stisa</title>
-    <link>http://tisato.me/tags/haxe/</link>
+    <link>http://silvio.tisato.me/tags/haxe/</link>
     <description>Recent content in Haxe on Blog by Stisa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>eu</language>
     <lastBuildDate>Fri, 02 Oct 2015 22:36:29 +0200</lastBuildDate>
-    <atom:link href="http://tisato.me/tags/haxe/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://silvio.tisato.me/tags/haxe/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Luxe/Flow Hooks Example</title>
-      <link>http://tisato.me/blog/luxe-hooks/</link>
+      <link>http://silvio.tisato.me/blog/luxe-hooks/</link>
       <pubDate>Fri, 02 Oct 2015 22:36:29 +0200</pubDate>
       
-      <guid>http://tisato.me/blog/luxe-hooks/</guid>
+      <guid>http://silvio.tisato.me/blog/luxe-hooks/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m playing around with &lt;a href=&#34;http://luxeengine.com/&#34;&gt;luxe&lt;/a&gt;, building a simple depth first search-based maze generator, which I plan on turning into a full game ( btw you can try it &lt;a href=&#34;http://silvio.tisato.me/mazes/&#34;&gt;here&lt;/a&gt; ).&lt;br /&gt;
@@ -113,10 +113,10 @@ Calling &lt;code&gt;done()&lt;/code&gt; signals the build tool that our script i
     
     <item>
       <title>Starting with mint</title>
-      <link>http://tisato.me/blog/starting-with-mint/</link>
+      <link>http://silvio.tisato.me/blog/starting-with-mint/</link>
       <pubDate>Sun, 20 Sep 2015 21:13:59 +0200</pubDate>
       
-      <guid>http://tisato.me/blog/starting-with-mint/</guid>
+      <guid>http://silvio.tisato.me/blog/starting-with-mint/</guid>
       <description>&lt;p&gt;Today I started experimenting with &lt;a href=&#34;https://github.com/snowkit/mint&#34;&gt;mint&lt;/a&gt;, a library written in the
 Haxe programming language.&lt;br /&gt;
 It is a fairly new library, with relatively little documentation, but it&amp;rsquo;s also quite straightforward.&lt;br /&gt;

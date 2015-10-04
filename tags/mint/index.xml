@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mint on Blog by Stisa</title>
-    <link>http://tisato.me/tags/mint/</link>
+    <link>http://silvio.tisato.me/tags/mint/</link>
     <description>Recent content in Mint on Blog by Stisa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>eu</language>
     <lastBuildDate>Sun, 20 Sep 2015 21:13:59 +0200</lastBuildDate>
-    <atom:link href="http://tisato.me/tags/mint/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://silvio.tisato.me/tags/mint/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Starting with mint</title>
-      <link>http://tisato.me/blog/starting-with-mint/</link>
+      <link>http://silvio.tisato.me/blog/starting-with-mint/</link>
       <pubDate>Sun, 20 Sep 2015 21:13:59 +0200</pubDate>
       
-      <guid>http://tisato.me/blog/starting-with-mint/</guid>
+      <guid>http://silvio.tisato.me/blog/starting-with-mint/</guid>
       <description>&lt;p&gt;Today I started experimenting with &lt;a href=&#34;https://github.com/snowkit/mint&#34;&gt;mint&lt;/a&gt;, a library written in the
 Haxe programming language.&lt;br /&gt;
 It is a fairly new library, with relatively little documentation, but it&amp;rsquo;s also quite straightforward.&lt;br /&gt;

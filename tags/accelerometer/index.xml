@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Accelerometer on Blog by Stisa</title>
-    <link>http://tisato.me/tags/accelerometer/</link>
+    <link>http://silvio.tisato.me/tags/accelerometer/</link>
     <description>Recent content in Accelerometer on Blog by Stisa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>eu</language>
     <lastBuildDate>Tue, 08 Jul 2014 18:49:26 +0200</lastBuildDate>
-    <atom:link href="http://tisato.me/tags/accelerometer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://silvio.tisato.me/tags/accelerometer/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Unity3D &amp; accelerometer</title>
-      <link>http://tisato.me/blog/unity-accelerometer/</link>
+      <link>http://silvio.tisato.me/blog/unity-accelerometer/</link>
       <pubDate>Tue, 08 Jul 2014 18:49:26 +0200</pubDate>
       
-      <guid>http://tisato.me/blog/unity-accelerometer/</guid>
+      <guid>http://silvio.tisato.me/blog/unity-accelerometer/</guid>
       <description>&lt;p&gt;You know that feeling when you spend ours thinking about an issue, and you finally understand something &lt;strong&gt;very&lt;/strong&gt; simple was missing the whole time? Well, I know that feeling very well.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-clike&#34;&gt;  accel = Mathf.Round(Mathf.Sqrt(
