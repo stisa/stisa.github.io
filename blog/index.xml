@@ -11,10 +11,10 @@
     
     <item>
       <title>Luxe/Flow Hooks Example</title>
-      <link>http://silvio.tisato.me/blog/luxe_hooks/</link>
+      <link>http://silvio.tisato.me/blog/luxe-hooks/</link>
       <pubDate>Fri, 02 Oct 2015 22:36:29 +0200</pubDate>
       
-      <guid>http://silvio.tisato.me/blog/luxe_hooks/</guid>
+      <guid>http://silvio.tisato.me/blog/luxe-hooks/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m playing around with &lt;a href=&#34;http://luxeengine.com/&#34;&gt;luxe&lt;/a&gt;, building a simple depth first search-based maze generator, which I plan on turning into a full game ( btw you can try it &lt;a href=&#34;http://silvio.tisato.me/mazes/&#34;&gt;here&lt;/a&gt; ).&lt;br /&gt;
@@ -22,7 +22,7 @@ While iterating, I had to copy-paste the content of &lt;code&gt;bin/web/&lt;/cod
 At first, I tried using the  &lt;code&gt;--output-path &amp;lt;path&amp;gt;&lt;/code&gt; flag in &lt;code&gt;flow&lt;/code&gt;, that overrides the flow tree &lt;code&gt;project.app.output&lt;/code&gt; path. The problem with this method is that flow generates two folders, &lt;code&gt;web&lt;/code&gt; and &lt;code&gt;web.build&lt;/code&gt;, inside your selected path, and I didn&amp;rsquo;t like it very much.&lt;br /&gt;
 That&amp;rsquo;s when I found out about hooks, digging trough &lt;code&gt;flow&lt;/code&gt; source code.&lt;/p&gt;
 
-&lt;h3 id=&#34;hooks:952c94b91be92e4905601ac4cf33aae7&#34;&gt;Hooks&lt;/h3&gt;
+&lt;h3 id=&#34;hooks:9ae4c02ba277f90b870406f3e1b45dc8&#34;&gt;Hooks&lt;/h3&gt;
 
 &lt;p&gt;flow has the ability of launching node.js scripts before ( &lt;strong&gt;pre&lt;/strong&gt; ) and after ( &lt;strong&gt;post&lt;/strong&gt; ) building and running your project.&lt;br /&gt;
 This gave me the option of using a simple script to copy the output of the build to another folder, without having to copy-paste manually every time.&lt;/p&gt;
@@ -113,10 +113,10 @@ Calling &lt;code&gt;done()&lt;/code&gt; signals the build tool that our script i
     
     <item>
       <title>Starting with mint</title>
-      <link>http://silvio.tisato.me/blog/starting_with_mint/</link>
+      <link>http://silvio.tisato.me/blog/starting-with-mint/</link>
       <pubDate>Sun, 20 Sep 2015 21:13:59 +0200</pubDate>
       
-      <guid>http://silvio.tisato.me/blog/starting_with_mint/</guid>
+      <guid>http://silvio.tisato.me/blog/starting-with-mint/</guid>
       <description>&lt;p&gt;Today I started experimenting with &lt;a href=&#34;https://github.com/snowkit/mint&#34;&gt;mint&lt;/a&gt;, a library written in the
 Haxe programming language.&lt;br /&gt;
 It is a fairly new library, with relatively little documentation, but it&amp;rsquo;s also quite straightforward.&lt;br /&gt;
@@ -130,10 +130,10 @@ Here it is: &lt;a href=&#34;https://github.com/stisa/mint-example&#34;&gt;github
     
     <item>
       <title>Kivy Layout</title>
-      <link>http://silvio.tisato.me/blog/kivy_layout/</link>
+      <link>http://silvio.tisato.me/blog/kivy-layout/</link>
       <pubDate>Tue, 11 Aug 2015 18:49:26 +0200</pubDate>
       
-      <guid>http://silvio.tisato.me/blog/kivy_layout/</guid>
+      <guid>http://silvio.tisato.me/blog/kivy-layout/</guid>
       <description>&lt;p&gt;So I&amp;rsquo;ve started messing around with &lt;a href=&#34;http://kivy.org/&#34;&gt;Kivy&lt;/a&gt;, and I was stuck trying to understand just &lt;em&gt;how&lt;/em&gt; the layout thing works when using .kv code.
 And I think I finally understood what I was doing wrong. I was basically setting the layout of the small square that is the default widget size in Kivy so, knowing that, I tried creating the base widget as a layout and it &lt;em&gt;worked&lt;/em&gt; :D&lt;/p&gt;
 
@@ -181,10 +181,10 @@ And I think I finally understood what I was doing wrong. I was basically setting
     
     <item>
       <title>Unity3D &amp; accelerometer</title>
-      <link>http://silvio.tisato.me/blog/unity_accelerometer/</link>
+      <link>http://silvio.tisato.me/blog/unity-accelerometer/</link>
       <pubDate>Tue, 08 Jul 2014 18:49:26 +0200</pubDate>
       
-      <guid>http://silvio.tisato.me/blog/unity_accelerometer/</guid>
+      <guid>http://silvio.tisato.me/blog/unity-accelerometer/</guid>
       <description>&lt;p&gt;You know that feeling when you spend ours thinking about an issue, and you finally understand something &lt;strong&gt;very&lt;/strong&gt; simple was missing the whole time? Well, I know that feeling very well.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-clike&#34;&gt;  accel = Mathf.Round(Mathf.Sqrt(

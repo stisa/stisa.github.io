@@ -11,10 +11,10 @@
     
     <item>
       <title>Starting with mint</title>
-      <link>http://silvio.tisato.me/blog/starting_with_mint/</link>
+      <link>http://silvio.tisato.me/blog/starting-with-mint/</link>
       <pubDate>Sun, 20 Sep 2015 21:13:59 +0200</pubDate>
       
-      <guid>http://silvio.tisato.me/blog/starting_with_mint/</guid>
+      <guid>http://silvio.tisato.me/blog/starting-with-mint/</guid>
       <description>&lt;p&gt;Today I started experimenting with &lt;a href=&#34;https://github.com/snowkit/mint&#34;&gt;mint&lt;/a&gt;, a library written in the
 Haxe programming language.&lt;br /&gt;
 It is a fairly new library, with relatively little documentation, but it&amp;rsquo;s also quite straightforward.&lt;br /&gt;

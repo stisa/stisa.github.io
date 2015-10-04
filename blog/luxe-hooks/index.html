@@ -55,7 +55,7 @@
 
   <section class="content">
     <article>
-      <h2><a href="http://silvio.tisato.me/blog/luxe_hooks/">Luxe/Flow Hooks Example</a></h2>
+      <h2><a href="http://silvio.tisato.me/blog/luxe-hooks/">Luxe/Flow Hooks Example</a></h2>
       <i class="notes">Stisa, 02 October 2015</i>
 
       
@@ -65,7 +65,7 @@ While iterating, I had to copy-paste the content of <code>bin/web/</code> to the
 At first, I tried using the  <code>--output-path &lt;path&gt;</code> flag in <code>flow</code>, that overrides the flow tree <code>project.app.output</code> path. The problem with this method is that flow generates two folders, <code>web</code> and <code>web.build</code>, inside your selected path, and I didn&rsquo;t like it very much.<br />
 That&rsquo;s when I found out about hooks, digging trough <code>flow</code> source code.</p>
 
-<h3 id="hooks:952c94b91be92e4905601ac4cf33aae7">Hooks</h3>
+<h3 id="hooks:9ae4c02ba277f90b870406f3e1b45dc8">Hooks</h3>
 
 <p>flow has the ability of launching node.js scripts before ( <strong>pre</strong> ) and after ( <strong>post</strong> ) building and running your project.<br />
 This gave me the option of using a simple script to copy the output of the build to another folder, without having to copy-paste manually every time.</p>
