@@ -145,7 +145,7 @@ This gave me the option of using a simple script to copy the output of the build
   }
 </code></pre>
 
-<p>The <code>exports.&lt;name&gt;</code> part allows <code>flow</code> to call our hook, passing it a <code>flow</code> object and the <code>done</code> function.<br />
+<p>The <code>exports.hook</code> part allows <code>flow</code> to call our hook, passing it a <code>flow</code> object and the <code>done</code> function.<br />
 Calling <code>done()</code> signals the build tool that our script is finished executing and that it can go on.</p>
 
 <p>And that&rsquo;s it, just <code>flow run &lt;target&gt;</code> your project and watch as your hook does its thing.</p>

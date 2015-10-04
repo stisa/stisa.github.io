@@ -102,7 +102,7 @@ This gave me the option of using a simple script to copy the output of the build
   }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The &lt;code&gt;exports.&amp;lt;name&amp;gt;&lt;/code&gt; part allows &lt;code&gt;flow&lt;/code&gt; to call our hook, passing it a &lt;code&gt;flow&lt;/code&gt; object and the &lt;code&gt;done&lt;/code&gt; function.&lt;br /&gt;
+&lt;p&gt;The &lt;code&gt;exports.hook&lt;/code&gt; part allows &lt;code&gt;flow&lt;/code&gt; to call our hook, passing it a &lt;code&gt;flow&lt;/code&gt; object and the &lt;code&gt;done&lt;/code&gt; function.&lt;br /&gt;
 Calling &lt;code&gt;done()&lt;/code&gt; signals the build tool that our script is finished executing and that it can go on.&lt;/p&gt;
 
 &lt;p&gt;And that&amp;rsquo;s it, just &lt;code&gt;flow run &amp;lt;target&amp;gt;&lt;/code&gt; your project and watch as your hook does its thing.&lt;/p&gt;
