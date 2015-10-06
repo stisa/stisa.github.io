@@ -5,7 +5,7 @@ title = "Luxe/Flow Hooks Example"
 tags= ["flow","hooks","luxe","example","haxe"]
 +++
 
-I'm playing around with [luxe](http://luxeengine.com/), building a simple depth first search-based maze generator, which I plan on turning into a full game ( btw you can try it [here](http://silvio.tisato.me/mazes/) ).  
+I'm playing around with [luxe](http://luxeengine.com/), building a simple depth first search-based maze generator, which I plan on turning into a full game ( btw you can try it [here](http://blog.tisato.me/mazes/) ).  
 While iterating, I had to copy-paste the content of `bin/web/` to the folder linked with the project [git repo](https://github.com/stisa/mazes), but it got old fast, and I **had** to find a faster way.    
 At first, I tried using the  `--output-path <path>` flag in `flow`, that overrides the flow tree `project.app.output` path. The problem with this method is that flow generates two folders, `web` and `web.build`, inside your selected path, and I didn't like it very much.  
 That's when I found out about hooks, digging trough `flow` source code.
