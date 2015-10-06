@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Haxe on Blog by Stisa</title>
-    <link>http://blog.tisato.me/tags/haxe/</link>
-    <description>Recent content in Haxe on Blog by Stisa</description>
+    <title>Articles on Blog by Stisa</title>
+    <link>http://blog.tisato.me/articles/</link>
+    <description>Recent content in Articles on Blog by Stisa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>eu</language>
     <lastBuildDate>Fri, 02 Oct 2015 22:36:29 +0200</lastBuildDate>
-    <atom:link href="http://blog.tisato.me/tags/haxe/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.tisato.me/articles/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Luxe/Flow Hooks Example</title>
@@ -125,6 +125,78 @@ Here it is: &lt;a href=&#34;https://github.com/stisa/mint-example&#34;&gt;github
 
 &lt;p&gt;&lt;img src=&#34;http://i.imgur.com/ikJbewf.png&#34; alt=&#34;Example&#34; /&gt;
 &lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kivy Layout</title>
+      <link>http://blog.tisato.me/articles/kivy-layout/</link>
+      <pubDate>Tue, 11 Aug 2015 18:49:26 +0200</pubDate>
+      
+      <guid>http://blog.tisato.me/articles/kivy-layout/</guid>
+      <description>&lt;p&gt;So I&amp;rsquo;ve started messing around with &lt;a href=&#34;http://kivy.org/&#34;&gt;Kivy&lt;/a&gt;, and I was stuck trying to understand just &lt;em&gt;how&lt;/em&gt; the layout thing works when using .kv code.
+And I think I finally understood what I was doing wrong. I was basically setting the layout of the small square that is the default widget size in Kivy so, knowing that, I tried creating the base widget as a layout and it &lt;em&gt;worked&lt;/em&gt; :D&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;p&gt;Python code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;	from kivy.app import App
+	from kivy.uix.gridlayout import GridLayout
+
+	class TestApp(App):
+		def build(self):
+			root = Root()
+			return root
+
+	# define the main widget as a GridLayout or any other layout of your choice		
+	class Root(GridLayout):
+	    pass
+
+	if __name__ == &#39;__main__&#39;:
+		TestApp().run()  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kv code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;	#:kivy 1.8.0
+	&amp;lt;Root&amp;gt;:
+	# define layout variables
+		cols: 2
+
+		Label:
+			font_size: 70
+			text: &amp;quot;Test&amp;quot;
+		Label:
+			font_size: 70
+			text: &amp;quot;Test&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Result:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/LCQdm11.jpg?1&#34; alt=&#34;Imgur&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unity3D &amp; accelerometer</title>
+      <link>http://blog.tisato.me/articles/unity-accelerometer/</link>
+      <pubDate>Tue, 08 Jul 2014 18:49:26 +0200</pubDate>
+      
+      <guid>http://blog.tisato.me/articles/unity-accelerometer/</guid>
+      <description>&lt;p&gt;You know that feeling when you spend ours thinking about an issue, and you finally understand something &lt;strong&gt;very&lt;/strong&gt; simple was missing the whole time? Well, I know that feeling very well.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-clike&#34;&gt;  accel = Mathf.Round(Mathf.Sqrt(
+    (Input.acceleration.x *Input.acceleration.x) +  
+    (Input.acceleration.z * Input.acceleration.z) +  
+    (Input.acceleration.y*Input.acceleration.y)
+  ));  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Outputted 0. Zero. Always, even when shaking the phone. And then I realized &lt;code&gt;Input.acceleration&lt;/code&gt; gives a value between 0 and 1, and then rounding down that number always ended up to zero.&lt;/p&gt;
+
+&lt;p&gt;Next time, I might read documentation a bit more carefully, although I didn&amp;rsquo;t find it mentioned on the Unity docs.&lt;/p&gt;
 </description>
     </item>
     

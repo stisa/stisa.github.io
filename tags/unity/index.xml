@@ -11,10 +11,10 @@
     
     <item>
       <title>Unity3D &amp; accelerometer</title>
-      <link>http://blog.tisato.me/blog/unity-accelerometer/</link>
+      <link>http://blog.tisato.me/articles/unity-accelerometer/</link>
       <pubDate>Tue, 08 Jul 2014 18:49:26 +0200</pubDate>
       
-      <guid>http://blog.tisato.me/blog/unity-accelerometer/</guid>
+      <guid>http://blog.tisato.me/articles/unity-accelerometer/</guid>
       <description>&lt;p&gt;You know that feeling when you spend ours thinking about an issue, and you finally understand something &lt;strong&gt;very&lt;/strong&gt; simple was missing the whole time? Well, I know that feeling very well.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-clike&#34;&gt;  accel = Mathf.Round(Mathf.Sqrt(

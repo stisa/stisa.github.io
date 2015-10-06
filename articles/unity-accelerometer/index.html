@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="eu">
   <head>
-    <title>About me</title>
+    <title>Unity3D &amp; accelerometer</title>
     <meta name="author" content="Stisa"> 
     <meta name="generator" content="Hugo 0.14" />
-  	<meta name="description" content="Blog and website made with Hugo by Stisa">
+  	<meta name="description" content="Noob problems with Unity">
   	<meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   	<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -55,20 +55,29 @@
 
   <section class="content">
     <article>
-      <h2><a href="http://blog.tisato.me/pages/about/">About me</a></h2>
-      <i class="notes">Stisa, 11 August 2015</i>
+      <h2><a href="http://blog.tisato.me/articles/unity-accelerometer/">Unity3D &amp; accelerometer</a></h2>
+      <i class="notes">Stisa, 08 July 2014</i>
 
-      <p><strong>Stisa</strong></p>
+      <p>You know that feeling when you spend ours thinking about an issue, and you finally understand something <strong>very</strong> simple was missing the whole time? Well, I know that feeling very well.</p>
 
-<p><em>From Italy</em></p>
+<pre><code class="language-clike">  accel = Mathf.Round(Mathf.Sqrt(
+    (Input.acceleration.x *Input.acceleration.x) +  
+    (Input.acceleration.z * Input.acceleration.z) +  
+    (Input.acceleration.y*Input.acceleration.y)
+  ));  
+</code></pre>
 
-<p><a href="http://github.com/stisa">Github</a></p>
+<p>Outputted 0. Zero. Always, even when shaking the phone. And then I realized <code>Input.acceleration</code> gives a value between 0 and 1, and then rounding down that number always ended up to zero.</p>
 
-<p>Ciao!</p>
+<p>Next time, I might read documentation a bit more carefully, although I didn&rsquo;t find it mentioned on the Unity docs.</p>
 
 
       <i class="tags">
         <p style="display: inline;">Tags: </p>
+      
+        <li style="display: inline;"><a href="/tags/unity">  Unity</a> </li>
+      
+        <li style="display: inline;"><a href="/tags/accelerometer">  accelerometer</a> </li>
       
       </i>
 
