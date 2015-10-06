@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Blog by Stisa</title>
-    <link>http://silvio.tisato.me/pages/</link>
+    <link>http://blog.tisato.me/pages/</link>
     <description>Recent content in Pages on Blog by Stisa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>eu</language>
     <lastBuildDate>Tue, 11 Aug 2015 20:37:26 +0200</lastBuildDate>
-    <atom:link href="http://silvio.tisato.me/pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.tisato.me/pages/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About me</title>
-      <link>http://silvio.tisato.me/pages/about/</link>
+      <link>http://blog.tisato.me/pages/about/</link>
       <pubDate>Tue, 11 Aug 2015 20:37:26 +0200</pubDate>
       
-      <guid>http://silvio.tisato.me/pages/about/</guid>
+      <guid>http://blog.tisato.me/pages/about/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stisa&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;From Italy&lt;/em&gt;&lt;/p&gt;
