@@ -54,4 +54,22 @@ Here's a picture of the project running:
 
 {{< figure src="/media/luxe-uwa-output.jpg" title="Our white square running in a UWA" >}}
 
+### Problems
+
+If when you build your project in Visual Studio it only shows a black screen, try changing :
+
+```clike
+  snow : {
+    config : {
+      has_loop : true,
+      config_path : 'config.json' -> ''
+    }
+  },
+```
+
+Inside your `framework.flow` in your `snow` lib folder.
+If you leave it as `config.json`, snow tries loading it with a `XMLHttpRequest`, the problem is javascript is not allowed to request local files.
+Passing in an empty string instead bypasses this.
+
+
 Thanks for reading this, and if you find errors or if I got something wrong, please [open an issue on github](https://github.com/stisa/stisa.github.io)

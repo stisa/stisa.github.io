@@ -62,7 +62,9 @@
       <h2><a href="http://blog.tisato.me/articles/luxeengine-universal-windows-app/">Luxe and Universal Windows Apps</a></h2>
       <i class="notes">Stisa, 21 November 2015</i>
 
-      <p>I&rsquo;m still playing with <a href="http://luxeengine.com/">luxe</a>, and I heard that there is the possibility to turn html5 apps into <a href="https://msdn.microsoft.com/en-US/library/windows/apps/dn726767.aspx">Windows Universal Apps</a>(also known as UWA) and I had to try it, even if it&rsquo;s just (from my understanding, anyway) a wrapper around a webview.<br />
+      
+
+<p>I&rsquo;m still playing with <a href="http://luxeengine.com/">luxe</a>, and I heard that there is the possibility to turn html5 apps into <a href="https://msdn.microsoft.com/en-US/library/windows/apps/dn726767.aspx">Windows Universal Apps</a>(also known as UWA) and I had to try it, even if it&rsquo;s just (from my understanding, anyway) a wrapper around a webview.<br />
 The following steps assume that:</p>
 
 <ul>
@@ -124,6 +126,22 @@ The following steps assume that:</p>
     
 </figure>
 </p>
+
+<h3 id="problems:7dcf4a93aa7d2c54dbe71f8576bf5895">Problems</h3>
+
+<p>If when you build your project in Visual Studio it only shows a black screen, try changing :</p>
+
+<pre><code class="language-clike">  snow : {
+    config : {
+      has_loop : true,
+      config_path : 'config.json' -&gt; ''
+    }
+  },
+</code></pre>
+
+<p>Inside your <code>framework.flow</code> in your <code>snow</code> lib folder.
+If you leave it as <code>config.json</code>, snow tries loading it with a <code>XMLHttpRequest</code>, the problem is javascript is not allowed to request local files.
+Passing in an empty string instead bypasses this.</p>
 
 <p>Thanks for reading this, and if you find errors or if I got something wrong, please <a href="https://github.com/stisa/stisa.github.io">open an issue on github</a></p>
 

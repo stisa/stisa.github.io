@@ -15,7 +15,9 @@
       <pubDate>Sat, 21 Nov 2015 11:57:47 +0100</pubDate>
       
       <guid>http://blog.tisato.me/articles/luxeengine-universal-windows-app/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m still playing with &lt;a href=&#34;http://luxeengine.com/&#34;&gt;luxe&lt;/a&gt;, and I heard that there is the possibility to turn html5 apps into &lt;a href=&#34;https://msdn.microsoft.com/en-US/library/windows/apps/dn726767.aspx&#34;&gt;Windows Universal Apps&lt;/a&gt;(also known as UWA) and I had to try it, even if it&amp;rsquo;s just (from my understanding, anyway) a wrapper around a webview.&lt;br /&gt;
+      <description>
+
+&lt;p&gt;I&amp;rsquo;m still playing with &lt;a href=&#34;http://luxeengine.com/&#34;&gt;luxe&lt;/a&gt;, and I heard that there is the possibility to turn html5 apps into &lt;a href=&#34;https://msdn.microsoft.com/en-US/library/windows/apps/dn726767.aspx&#34;&gt;Windows Universal Apps&lt;/a&gt;(also known as UWA) and I had to try it, even if it&amp;rsquo;s just (from my understanding, anyway) a wrapper around a webview.&lt;br /&gt;
 The following steps assume that:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -77,6 +79,22 @@ The following steps assume that:&lt;/p&gt;
     
 &lt;/figure&gt;
 &lt;/p&gt;
+
+&lt;h3 id=&#34;problems:7dcf4a93aa7d2c54dbe71f8576bf5895&#34;&gt;Problems&lt;/h3&gt;
+
+&lt;p&gt;If when you build your project in Visual Studio it only shows a black screen, try changing :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-clike&#34;&gt;  snow : {
+    config : {
+      has_loop : true,
+      config_path : &#39;config.json&#39; -&amp;gt; &#39;&#39;
+    }
+  },
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Inside your &lt;code&gt;framework.flow&lt;/code&gt; in your &lt;code&gt;snow&lt;/code&gt; lib folder.
+If you leave it as &lt;code&gt;config.json&lt;/code&gt;, snow tries loading it with a &lt;code&gt;XMLHttpRequest&lt;/code&gt;, the problem is javascript is not allowed to request local files.
+Passing in an empty string instead bypasses this.&lt;/p&gt;
 
 &lt;p&gt;Thanks for reading this, and if you find errors or if I got something wrong, please &lt;a href=&#34;https://github.com/stisa/stisa.github.io&#34;&gt;open an issue on github&lt;/a&gt;&lt;/p&gt;
 </description>
