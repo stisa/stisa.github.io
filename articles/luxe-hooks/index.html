@@ -23,7 +23,7 @@
     <a href="/">Home</a>
     <a href="/articles/">Blog</a>
     
-    <a href="http://blog.tisato.me/pages/about/">About me</a>
+    <a href="http://stisa.space/pages/about/">About me</a>
     
     <hr/>
     <i>Tags:</i>
@@ -59,12 +59,12 @@
 
   <section class="content">
     <article>
-      <h2><a href="http://blog.tisato.me/articles/luxe-hooks/">Luxe/Flow Hooks Example</a></h2>
+      <h2><a href="http://stisa.space/articles/luxe-hooks/">Luxe/Flow Hooks Example</a></h2>
       <i class="notes">Stisa, 02 October 2015</i>
 
       
 
-<p>I&rsquo;m playing around with <a href="http://luxeengine.com/">luxe</a>, building a simple depth first search-based maze generator, which I plan on turning into a full game ( btw you can try it <a href="http://blog.tisato.me/mazes/">here</a> ).<br />
+<p>I&rsquo;m playing around with <a href="http://luxeengine.com/">luxe</a>, building a simple depth first search-based maze generator, which I plan on turning into a full game ( btw you can try it <a href="/mazes/">here</a> ).<br />
 While iterating, I had to copy-paste the content of <code>bin/web/</code> to the folder linked with the project <a href="https://github.com/stisa/mazes">git repo</a>, but it got old fast, and I <strong>had</strong> to find a faster way.<br />
 At first, I tried using the  <code>--output-path &lt;path&gt;</code> flag in <code>flow</code>, that overrides the flow tree <code>project.app.output</code> path. The problem with this method is that flow generates two folders, <code>web</code> and <code>web.build</code>, inside your selected path, and I didn&rsquo;t like it very much.<br />
 That&rsquo;s when I found out about hooks, digging trough <code>flow</code> source code.</p>

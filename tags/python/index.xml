@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Blog by Stisa</title>
-    <link>http://blog.tisato.me/tags/python/</link>
+    <link>http://stisa.space/tags/python/</link>
     <description>Recent content in Python on Blog by Stisa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>eu</language>
     <lastBuildDate>Tue, 11 Aug 2015 18:49:26 +0200</lastBuildDate>
-    <atom:link href="http://blog.tisato.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://stisa.space/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Kivy Layout</title>
-      <link>http://blog.tisato.me/articles/kivy-layout/</link>
+      <link>http://stisa.space/articles/kivy-layout/</link>
       <pubDate>Tue, 11 Aug 2015 18:49:26 +0200</pubDate>
       
-      <guid>http://blog.tisato.me/articles/kivy-layout/</guid>
+      <guid>http://stisa.space/articles/kivy-layout/</guid>
       <description>&lt;p&gt;So I&amp;rsquo;ve started messing around with &lt;a href=&#34;http://kivy.org/&#34;&gt;Kivy&lt;/a&gt;, and I was stuck trying to understand just &lt;em&gt;how&lt;/em&gt; the layout thing works when using .kv code.
 And I think I finally understood what I was doing wrong. I was basically setting the layout of the small square that is the default widget size in Kivy so, knowing that, I tried creating the base widget as a layout and it &lt;em&gt;worked&lt;/em&gt; :D&lt;/p&gt;
 

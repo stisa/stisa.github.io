@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on Blog by Stisa</title>
-    <link>http://blog.tisato.me/tags/windows/</link>
+    <link>http://stisa.space/tags/windows/</link>
     <description>Recent content in Windows on Blog by Stisa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>eu</language>
     <lastBuildDate>Sat, 21 Nov 2015 11:57:47 +0100</lastBuildDate>
-    <atom:link href="http://blog.tisato.me/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://stisa.space/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Luxe and Universal Windows Apps</title>
-      <link>http://blog.tisato.me/articles/luxeengine-universal-windows-app/</link>
+      <link>http://stisa.space/articles/luxeengine-universal-windows-app/</link>
       <pubDate>Sat, 21 Nov 2015 11:57:47 +0100</pubDate>
       
-      <guid>http://blog.tisato.me/articles/luxeengine-universal-windows-app/</guid>
+      <guid>http://stisa.space/articles/luxeengine-universal-windows-app/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m still playing with &lt;a href=&#34;http://luxeengine.com/&#34;&gt;luxe&lt;/a&gt;, and I heard that there is the possibility to turn html5 apps into &lt;a href=&#34;https://msdn.microsoft.com/en-US/library/windows/apps/dn726767.aspx&#34;&gt;Windows Universal Apps&lt;/a&gt;(also known as UWA) and I had to try it, even if it&amp;rsquo;s just (from my understanding, anyway) a wrapper around a webview.&lt;br /&gt;
@@ -69,7 +69,7 @@ The following steps assume that:&lt;/p&gt;
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://blog.tisato.me/media/luxe-uwa-output.jpg&#34; /&gt;
+        &lt;img src=&#34;http://stisa.space/media/luxe-uwa-output.jpg&#34; /&gt;
     
     
     &lt;figcaption&gt;

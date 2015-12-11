@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Haxe on Blog by Stisa</title>
-    <link>http://blog.tisato.me/tags/haxe/</link>
+    <link>http://stisa.space/tags/haxe/</link>
     <description>Recent content in Haxe on Blog by Stisa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>eu</language>
     <lastBuildDate>Sat, 21 Nov 2015 11:57:47 +0100</lastBuildDate>
-    <atom:link href="http://blog.tisato.me/tags/haxe/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://stisa.space/tags/haxe/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Luxe and Universal Windows Apps</title>
-      <link>http://blog.tisato.me/articles/luxeengine-universal-windows-app/</link>
+      <link>http://stisa.space/articles/luxeengine-universal-windows-app/</link>
       <pubDate>Sat, 21 Nov 2015 11:57:47 +0100</pubDate>
       
-      <guid>http://blog.tisato.me/articles/luxeengine-universal-windows-app/</guid>
+      <guid>http://stisa.space/articles/luxeengine-universal-windows-app/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m still playing with &lt;a href=&#34;http://luxeengine.com/&#34;&gt;luxe&lt;/a&gt;, and I heard that there is the possibility to turn html5 apps into &lt;a href=&#34;https://msdn.microsoft.com/en-US/library/windows/apps/dn726767.aspx&#34;&gt;Windows Universal Apps&lt;/a&gt;(also known as UWA) and I had to try it, even if it&amp;rsquo;s just (from my understanding, anyway) a wrapper around a webview.&lt;br /&gt;
@@ -69,7 +69,7 @@ The following steps assume that:&lt;/p&gt;
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://blog.tisato.me/media/luxe-uwa-output.jpg&#34; /&gt;
+        &lt;img src=&#34;http://stisa.space/media/luxe-uwa-output.jpg&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -102,13 +102,13 @@ Passing in an empty string instead bypasses this.&lt;/p&gt;
     
     <item>
       <title>Luxe/Flow Hooks Example</title>
-      <link>http://blog.tisato.me/articles/luxe-hooks/</link>
+      <link>http://stisa.space/articles/luxe-hooks/</link>
       <pubDate>Fri, 02 Oct 2015 22:36:29 +0200</pubDate>
       
-      <guid>http://blog.tisato.me/articles/luxe-hooks/</guid>
+      <guid>http://stisa.space/articles/luxe-hooks/</guid>
       <description>
 
-&lt;p&gt;I&amp;rsquo;m playing around with &lt;a href=&#34;http://luxeengine.com/&#34;&gt;luxe&lt;/a&gt;, building a simple depth first search-based maze generator, which I plan on turning into a full game ( btw you can try it &lt;a href=&#34;http://blog.tisato.me/mazes/&#34;&gt;here&lt;/a&gt; ).&lt;br /&gt;
+&lt;p&gt;I&amp;rsquo;m playing around with &lt;a href=&#34;http://luxeengine.com/&#34;&gt;luxe&lt;/a&gt;, building a simple depth first search-based maze generator, which I plan on turning into a full game ( btw you can try it &lt;a href=&#34;http://stisa.space/mazes/&#34;&gt;here&lt;/a&gt; ).&lt;br /&gt;
 While iterating, I had to copy-paste the content of &lt;code&gt;bin/web/&lt;/code&gt; to the folder linked with the project &lt;a href=&#34;https://github.com/stisa/mazes&#34;&gt;git repo&lt;/a&gt;, but it got old fast, and I &lt;strong&gt;had&lt;/strong&gt; to find a faster way.&lt;br /&gt;
 At first, I tried using the  &lt;code&gt;--output-path &amp;lt;path&amp;gt;&lt;/code&gt; flag in &lt;code&gt;flow&lt;/code&gt;, that overrides the flow tree &lt;code&gt;project.app.output&lt;/code&gt; path. The problem with this method is that flow generates two folders, &lt;code&gt;web&lt;/code&gt; and &lt;code&gt;web.build&lt;/code&gt;, inside your selected path, and I didn&amp;rsquo;t like it very much.&lt;br /&gt;
 That&amp;rsquo;s when I found out about hooks, digging trough &lt;code&gt;flow&lt;/code&gt; source code.&lt;/p&gt;
@@ -204,10 +204,10 @@ Calling &lt;code&gt;done()&lt;/code&gt; signals the build tool that our script i
     
     <item>
       <title>Starting with mint</title>
-      <link>http://blog.tisato.me/articles/starting-with-mint/</link>
+      <link>http://stisa.space/articles/starting-with-mint/</link>
       <pubDate>Sun, 20 Sep 2015 21:13:59 +0200</pubDate>
       
-      <guid>http://blog.tisato.me/articles/starting-with-mint/</guid>
+      <guid>http://stisa.space/articles/starting-with-mint/</guid>
       <description>&lt;p&gt;Today I started experimenting with &lt;a href=&#34;https://github.com/snowkit/mint&#34;&gt;mint&lt;/a&gt;, a library written in the
 Haxe programming language.&lt;br /&gt;
 It is a fairly new library, with relatively little documentation, but it&amp;rsquo;s also quite straightforward.&lt;br /&gt;
