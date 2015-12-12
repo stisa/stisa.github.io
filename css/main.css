@@ -21,11 +21,12 @@ code {
   background-color: rgba(0,180,0,0.5);
   text-align: center;
 }
-.sidebar>.menu {
+.sidebar>.menu,.sidebar>.taglist {
   display: none;
 }
 
-.sidebar:hover > .menu, .sidebar:active > .menu  {
+.sidebar:hover > .menu, .sidebar:active > .menu,
+.sidebar:hover > .taglist, .sidebar:active > .taglist {
   display: block;
   padding-bottom: 1em;
 }
@@ -59,11 +60,22 @@ code {
     display: block;
     max-width: 25%;
     float: left;
-    text-align: left;
+    text-align: right;
     background-color: inherit;
   }
-  .sidebar>.menu {
+  .sidebar>h3 {
+    display: none;
+  }
+  .sidebar>.menu,.sidebar>.taglist {
     display: block;
+    margin-bottom: 1em;
+  }
+  .sidebar>*{
+    border: 0.1em solid black;
+    padding: 1em;
+  }
+  .taglist>strong{
+    text-align: left;
   }
   .notes {
     text-align: right;
@@ -71,8 +83,9 @@ code {
   .content {
     float: left;
     max-width: 74%;
+    width: 100%;
     padding-left: 0.5em;
-    border-left: 2px solid black;
+    padding-bottom:1em; 
   }
   img {width: auto;}
 }

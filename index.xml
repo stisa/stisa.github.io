@@ -6,8 +6,28 @@
     <description>Recent content on Blog by Stisa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>eu</language>
-    <lastBuildDate>Sat, 21 Nov 2015 11:57:47 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 12 Dec 2015 11:49:01 +0100</lastBuildDate>
     <atom:link href="http://stisa.space/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Projects</title>
+      <link>http://stisa.space/pages/projects/</link>
+      <pubDate>Sat, 12 Dec 2015 11:49:01 +0100</pubDate>
+      
+      <guid>http://stisa.space/pages/projects/</guid>
+      <description>
+
+&lt;p&gt;On this page I&amp;rsquo;ll try to keep track of my ongoing projects.&lt;/p&gt;
+
+&lt;h2 id=&#34;mazes:3c42bb4157bf51d85ae7ffc4e1685909&#34;&gt;Mazes&lt;/h2&gt;
+
+&lt;p&gt;This is a simple game, I built it while trying to understand depth-first search maze generators.&lt;br /&gt;
+Turns out the hardest part is knowing which cells are near each other.&lt;br /&gt;
+Built with luxe.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/stisa/mazes/&#34;&gt;Source&lt;/a&gt; - &lt;a href=&#34;http://stisa.space/mazes&#34;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Luxe and Universal Windows Apps</title>
