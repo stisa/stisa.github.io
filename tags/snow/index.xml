@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snow on Blog by Stisa</title>
+    <link>http://stisa.space/tags/snow/</link>
+    <description>Recent content in Snow on Blog by Stisa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>eu</language>
+    <lastBuildDate>Wed, 16 Dec 2015 13:51:04 +0100</lastBuildDate>
+    <atom:link href="http://stisa.space/tags/snow/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Snow/Luxe: Custom Web Layout</title>
+      <link>http://stisa.space/articles/custom-web-layout/</link>
+      <pubDate>Wed, 16 Dec 2015 13:51:04 +0100</pubDate>
+      
+      <guid>http://stisa.space/articles/custom-web-layout/</guid>
+      <description>&lt;p&gt;Hi everyone, this is just a quick post on a simple thing I found out today.
+When building for the web target with &lt;code&gt;luxe&lt;/code&gt;, the default layout is just a black background with the game window in the middle.
+While this is okay while developing, I wanted to show a demo of the game on my website, so I wanted its layout to fit with the rest of the site.&lt;/p&gt;
+
+&lt;p&gt;After a bit of digging (all right, a lot of digging, but only because I thought the layout was in &lt;code&gt;flow&lt;/code&gt;, as it is the one responsible of building)
+I found the default layout inside &lt;code&gt;snow&lt;/code&gt; lib folder, &lt;code&gt;snow\flow\web\index.html&lt;/code&gt;, where &lt;code&gt;snow&lt;/code&gt; is the path in which you installed &lt;code&gt;snow&lt;/code&gt;.
+The format suggests that it uses &lt;a href=&#34;http://handlebarsjs.com/&#34;&gt;handlebarjs&lt;/a&gt; or a similar templating system.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://stisa.space/media/custom-web-layout/before.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Default layout&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://stisa.space/media/custom-web-layout/after.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Custom layout&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;There probably is a better method of doing this on a per-project basis, maybe by defining a custom template in the flow file somewhere or by using
+ a hook that builds your custom layout, but this is a quick way of fitting a large number of projects with a consistent layout.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading, if you find errors or if I got something wrong, please &lt;a href=&#34;https://github.com/stisa/stisa.github.io&#34;&gt;open an issue on github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
