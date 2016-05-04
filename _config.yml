@@ -26,3 +26,6 @@ defaults:
       path: "tags"
     values:
       categories: "tag"
+
+gems:
+  - jekyll-sitemap
