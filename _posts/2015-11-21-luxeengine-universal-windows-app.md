@@ -1,7 +1,7 @@
 ---
 date : 2015-11-21T11:57:47+01:00
 title: "Luxe and Universal Windows Apps"
-tags: [uwa, windows, luxe, example, haXe]
+tags: [uwa, windows, luxe, example, haxe]
 layout: post
 ---
 

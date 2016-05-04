@@ -1,6 +1,6 @@
 ---
 title: "Tagged as: haXe"
 layout: tagpage
-tags: haXe
+tags: haxe
 permalink: /tags/haxe/
 ---

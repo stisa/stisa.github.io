@@ -3,7 +3,7 @@ layout: post
 date: 2015-10-02T22:36:29+02:00
 draft:  false
 title: "Luxe/Flow Hooks Example"
-tags: [flow, hooks, luxe, example, haXe]
+tags: [flow, hooks, luxe, example, haxe]
 ---
 
 I'm playing around with [luxe](http://luxeengine.com/), building a simple depth first search-based maze generator, which I plan on turning into a full game ( btw you can try it [here](http://stksa.space/mazes/) ).  
