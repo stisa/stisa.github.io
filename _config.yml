@@ -1,0 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Blog by Stisa
+email: silvio@tisato.me
+author: stisa
+description: "Blog and website about programming and engineering built with Jekyll, by Stisa"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://stisa.space" # the base hostname & protocol for your site
+twitter_username: stisa
+github_username: stisa
+permalink: /articles/:title/
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: "tags"
+    values:
+      categories: "tag"

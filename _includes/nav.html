@@ -1,0 +1,24 @@
+<header class="sidebar">
+
+  <h3>Menu</h3>
+
+  <div class="menu">
+
+    <a href="{{ site.baseurl }}/">Home</a>
+    <!--<a href="{{ site.baseurl }}/articles/">Blog</a>-->
+    <a href="{{ site.baseurl }}/projects/">Projects</a>
+    <a href="{{ site.baseurl }}/about/">About Me</a>
+
+  </div>
+  <div class="taglist">
+
+    <strong>Taglist:</strong>
+    {% assign tagList = (site.pages | where:"categories", "tag") %}
+   {% for tag in tagList %}
+    <a href="/tags/{{ tag.tags }}">{{ tag.tags }}</a>
+  {% endfor %}
+  <!--<a href=" site.repository }}">View on GitHub</a>-->
+  </div>
+
+   
+</header>
