@@ -19,5 +19,5 @@ A Pretty simple [Jupyter](http://jupyter.org/) kernel for [nim](http://nim-lang.
 
 [Source](https://github.com/stisa/jupyter-nim-kernel) - [Example](https://github.com/stisa/jupyter-nim-kernel/blob/master/example-notebook.ipynb)  
 
-PS: [This gist](https://gist.github.com/stisa/27b9d2f4aed9c85d7501ea38e15d9865) has a tool to convert a  
- notebook `.ipynb` file into a `.nim` file, keeping `markdown` blocks as `discard` blocks for documentation purposes.  
+PS: [This gist](https://gist.github.com/stisa/27b9d2f4aed9c85d7501ea38e15d9865) has a tool to convert a  notebook `.ipynb` file into  
+a `.nim` file, keeping `markdown` blocks as `discard` blocks for documentation purposes.  
