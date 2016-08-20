@@ -21,3 +21,8 @@ A Pretty simple [Jupyter](http://jupyter.org/) kernel for [nim](http://nim-lang.
 
 PS: [This gist](https://gist.github.com/stisa/27b9d2f4aed9c85d7501ea38e15d9865) has a tool to convert a  notebook `.ipynb` file into  
 a `.nim` file, keeping `markdown` blocks as `discard` blocks for documentation purposes.  
+
+## Nim WebGL bindings
+Simple bindings for webgl in [nim](http://nim-lang.org).
+
+[Source](https://github.com/stisa/webgl) - [Examples](/webgl)
