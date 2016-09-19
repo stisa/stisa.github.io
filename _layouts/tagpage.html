@@ -7,7 +7,7 @@ layout: default
 
   <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
   <i class="notes">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}, {{ post.date | date: "%b %-d, %Y" }}</i>
-  <p>{{ post.excerpt }}</p><a <a href="{{ post.url | prepend: site.baseurl }}">Continue reading...</a>
+  <p>{{ post.excerpt }}</p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading...</a>
  
 </article>
 {% endfor %}
