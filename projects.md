@@ -16,13 +16,30 @@ Built with luxe.
 
 ## Jupyter Nim Kernel
 A Pretty simple [Jupyter](http://jupyter.org/) kernel for [nim](http://nim-lang.org).  
+There are two versions:
+
+### INim
+INim is an implementation of all the kernel machinery in [nim](http://nim-lang.org).
+This is the version I will focus development on.
+
+[Source](https://github.com/stisa/INim) - [Example](https://github.com/stisa/INim/blob/master/examples/example-notebook.ipynb)
+
+### Jupyter-nim
+This version calls the `python` implementation. It's written in `python`.
 
 [Source](https://github.com/stisa/jupyter-nim-kernel) - [Example](https://github.com/stisa/jupyter-nim-kernel/blob/master/example-notebook.ipynb)  
 
+
 PS: [This gist](https://gist.github.com/stisa/27b9d2f4aed9c85d7501ea38e15d9865) has a tool to convert a  notebook `.ipynb` file into  
-a `.nim` file, keeping `markdown` blocks as `discard` blocks for documentation purposes.  
+a `.nim` file, keeping `markdown` blocks as `##[]##` blocks for documentation purposes.  
 
 ## Nim WebGL bindings
 Simple bindings for webgl in [nim](http://nim-lang.org).
 
 [Source](https://github.com/stisa/webgl) - [Examples](/webgl)
+
+## Graph 
+A toy plotter that creates `.png` files.
+
+[Source](https://github.com/stisa/graph) 
+![An example](https://github.com/stisa/graph/blob/master/examples/example2.png)
