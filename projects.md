@@ -42,4 +42,4 @@ Simple bindings for webgl in [nim](http://nim-lang.org).
 A toy plotter that creates `.png` files.
 
 [Source](https://github.com/stisa/graph) 
-![An example](https://github.com/stisa/graph/blob/master/examples/example2.png)
+![An example](https://github.com/stisa/graph/raw/master/examples/example2.png)
