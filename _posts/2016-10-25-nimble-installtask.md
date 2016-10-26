@@ -1,6 +1,6 @@
 ---
 date: "2016-10-25T23:10:04+01:00"
-draft: true
+draft: false
 title: "Nimble: running task before/after install "
 layout: post
 tags: ["nim", "nimble", "hook"]
