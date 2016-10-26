@@ -38,10 +38,21 @@ Simple bindings for webgl in [nim](http://nim-lang.org).
 
 [Source](https://github.com/stisa/webgl) - [Examples](/webgl)
 
-## Graph 
-A toy plotter that creates `.png` files.
+## NPng
+A naive png encoder written in nim, that can also inline images when used on the js target.  
+Currently does no compression at all, so expect **BIG** images.
 
+[Source](https://github.com/stisa/npng) - [Docs](/npng) - [Examples](/npng/examples.html)
+
+## Graph 
+A toy plotter that creates `.png` files. Uses `npng`.
 
 ![An example](https://github.com/stisa/graph/raw/master/examples/example2.png)
 
 [Source](https://github.com/stisa/graph) 
+
+## SNAiL
+A simple algebra library written in nim, that also works on the js target.
+Not very fast (for now).
+
+[Source](https://github.com/stisa/snail) - [Docs](/snail)
