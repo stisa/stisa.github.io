@@ -3,7 +3,7 @@ date: "2016-10-25T23:10:04+01:00"
 draft: false
 title: "Nimble: running task before/after install "
 layout: post
-tags: ["nim", "nimble", "hook"]
+tags: ["nim", "nimble", "hooks"]
 ---
 
 When you install a package through [nimble](https://github.com/nim-lang/nimble), it performs an action called `install`.
