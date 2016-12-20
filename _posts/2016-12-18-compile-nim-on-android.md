@@ -10,7 +10,7 @@ tags: ["nim", "android", "tutorial"]
 Unfortunately, my pc is stuck in the limbo of warranty for the next month or so, and I found myself without any way to code.  
 Or so I thought, until I remembered the Android phone in my pocket and, with a bit of effort, I got Nim to compile on it!  
 
-![nim hello android](media/compile-nim-android/running-nim.png) 
+![nim hello android](/media/compile-nim-android/running-nim.png) 
 
 In this post I will try to list and explain the steps I took to get nim to compile on my phone. As the Android ecosystem   
 is very diverse, I can't guarantee that these steps will work nor that your phone won't explode/implode or otherwise  
@@ -49,16 +49,16 @@ It will fail, but we just need to know which folder it's trying to use.
 The only phone I got to work is running android 6.0 with a 64bit cpu.
 If you are on a recent device, with a 64bit cpu, it's going to fail with unknown cpu `aarch64`
 So we need to add `aarch64` to `build.sh`:
-at the top there's a big `case` statement, near the end there's `arm64`, add *aarch64* to the condition above it.
+at the top there's a big `case` statement, near the end there's `arm64`, add `*aarch64*` to the condition above it.  
 While we are here, change `cc=gcc` to `cc=clang`.  
-Inside the folder `c_sources` there are various folder named `<number>_<number>`.
-Look for the folder that the build we attempted earlier used, in my case `2_10`
+Inside the folder `c_sources` there are various folder named `<number>_<number>`.  
+Look for the folder that the build we attempted earlier used, in my case `2_10`.  
 We need to add `glob`, as android is missing it for some reason:
-Copy `glob.h`, `glob.c` to `2_10`, then change `2_10/compiler_options.c` to use `"` instead of `<` for including `glob.h`
-and in `2_10/stdlib_osproc.c` change `/bin/sh` to `sh`
-Now compile glob: `clang -c glob.c -o glob.o`
-as above in lib/pure/osproc.nim
-Go back to `build.sh`and add `c_code/2_10/glob.o` to the linker, look for the block of lines with ending with `.o` and starting with `c_source/2_10`
+Copy [glob.h](/media/compile-nim-android/glob.h), [glob.c](/media/compile-nim-android/glob.c) to `2_10`, then change `2_10/compiler_options.c` to use `"` instead of `<` for including `glob.h`
+and in `2_10/stdlib_osproc.c` change `/bin/sh` to `sh`.  
+Now compile glob: `clang -c glob.c -o glob.o`  
+
+Go back to `build.sh`and add `c_code/2_10/glob.o` to the linker, look for the block of lines with ending with `.o` and starting with `c_source/2_10`  
   
 Lastly, in `lib/pure/osproc.nim` change `bin/sh` to `sh`
 
@@ -76,7 +76,7 @@ And finally, `./nim -v`
 In `usr/etc/profile` add `export PATH=$PATH:/data/data/com.termux/files/home/nimcsource/bin`
 Exit and reopen termux and `nim -v` should work.
 
-![nim -v on android](media/compile-nim-android/nim-android.png) 
+![nim -v on android](/media/compile-nim-android/nim-android.png) 
 
 **Todo>fix glob: issetugid and size_t**
  
