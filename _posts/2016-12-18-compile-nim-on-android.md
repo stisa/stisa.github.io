@@ -1,6 +1,6 @@
 ---
 date: "2016-12-18T17:15:00+01:00"
-draft: true
+draft: false
 title: "Compile nim on Android"
 layout: post
 tags: ["nim", "android", "tutorial"]
@@ -14,7 +14,7 @@ Or so I thought, until I remembered the Android phone in my pocket and, with a b
 
 In this post I will try to list and explain the steps I took to get nim to compile on my phone. As the Android ecosystem   
 is very diverse, I can't guarantee that these steps will work nor that your phone won't explode/implode or otherwise  
-malfunction, but root is not necessary so the worst that can happen is that you waste 100 MB or so for the terminal emulator.  
+malfunction, but root is not necessary so the worst that could happen should be that you waste 100 MB or so for the terminal emulator.  
 
 Prereqs
 -------
@@ -44,21 +44,25 @@ Now that we have our sources, lets move on to patching and compiling it.
 
 Patching nim
 -----------
-This parts differs based on your device, the simplest way to find out is trying to build nim, so `sh build.sh` 
-It will fail, but we just need to know which folder it's trying to use.
-The only phone I got to work is running android 6.0 with a 64bit cpu.
-If you are on a recent device, with a 64bit cpu, it's going to fail with unknown cpu `aarch64`
+This parts differs based on your device, I can only show how I did it.  
+The simplest way to get started is trying to build nim, so inside the folder you just extracted run `sh build.sh`.  
+It will fail, but we just need to know which folder it's trying to use.  
+The only phone I got to work is running android 6.0 with a 64bit cpu.  
+If you are on a recent device, with a 64bit cpu, it's going to fail with unknown cpu `aarch64`.  
 So we need to add `aarch64` to `build.sh`:
 at the top there's a big `case` statement, near the end there's `arm64`, add `*aarch64*` to the condition above it.  
 While we are here, change `cc=gcc` to `cc=clang`.  
+Now give `sh build.sh` another try.
+Didn't work heh?  
+
 Inside the folder `c_sources` there are various folder named `<number>_<number>`.  
 Look for the folder that the build we attempted earlier used, in my case `2_10`.  
 We need to add `glob`, as android is missing it for some reason:
-Copy [glob.h](/media/compile-nim-android/glob.h), [glob.c](/media/compile-nim-android/glob.c) to `2_10`, then change `2_10/compiler_options.c` to use `"` instead of `<` for including `glob.h`
+Copy [glob.h](/media/compile-nim-android/glob.h), [glob.c](/media/compile-nim-android/glob.c) (found these on [this google group](https://groups.google.com/forum/m/#!topic/android-ndk/vSH6MWPD0Vk) to `2_10`, then change `2_10/compiler_options.c` to use `"` instead of `<` for including `glob.h`
 and in `2_10/stdlib_osproc.c` change `/bin/sh` to `sh`.  
 Now compile glob: `clang -c glob.c -o glob.o`  
 
-Go back to `build.sh`and add `c_code/2_10/glob.o` to the linker, look for the block of lines with ending with `.o` and starting with `c_source/2_10`  
+Go back to `build.sh`and add `c_code/2_10/glob.o` to the linker (look for the block of lines ending with `.o` and starting with `c_source/2_10`)  
   
 Lastly, in `lib/pure/osproc.nim` change `bin/sh` to `sh`
 
@@ -67,9 +71,13 @@ Compiling and setting up nim
 
 Copy your `nim source` folder to termux storage: `cp <storage/downloads/nimcsources> <.>`
 Now enter the folder and run `sh build.sh`. This will take a while, at the end of compilation you should see `SUCCESS`.  
-Inside `nimcsources/bin` you should find your `nim` compiler.
+
+Inside `nimcsources/bin` you should find your `nim` compiler.  
+
 Now we need to set `clang` as compiler: inside your nim folder, in `config/nim.cfg` set `CC=clang` instead of `CC=gcc`
+
 The last thing we need to do is setting `./bin/nim` to executable: `cd bin && chmod +x nim`
+
 And finally, `./nim -v`
 
 ### Add nim to path
