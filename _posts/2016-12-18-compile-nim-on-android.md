@@ -76,6 +76,9 @@ Inside `nimcsources/bin` you should find your `nim` compiler.
 
 Now we need to set `clang` as compiler: inside your nim folder, in `config/nim.cfg` set `CC=clang` instead of `CC=gcc`
 
+**update**: we need to set up glob so it is linked correctly:  
+ copy `glob.h` to `/usr/include` ( you can find this folder going up with `cd ..` , it shouldbe on the same level as `home` ) and `glob.o` to `/usr/lib` , then in `config/nim.cfg` search for `clang.options.linker` and add `/data/data/com.termux/files/usr/lib/glob.o` to it.
+
 The last thing we need to do is setting `./bin/nim` to executable: `cd bin && chmod +x nim`
 
 And finally, `./nim -v`
