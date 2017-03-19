@@ -14,9 +14,7 @@ After a bit of digging (all right, a lot of digging, but only because I thought 
 I found the default layout inside `snow` lib folder, `snow\flow\web\index.html`, where `snow` is the path in which you installed `snow`.
 The format suggests that it uses [handlebarjs](http://handlebarsjs.com/) or a similar templating system.  
 
-{{< figure src="/media/custom-web-layout/before.png" title="Default layout" >}}
 ![Default layout](/media/custom-web-layout/before.png)
-{{< figure src="/media/custom-web-layout/after.png" title="Custom layout" >}}
 ![Custom layout](/media/custom-web-layout/after.png)
 
 There probably is a better method of doing this on a per-project basis, maybe by defining a custom template in the flow file somewhere or by using

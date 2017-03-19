@@ -53,7 +53,6 @@ Now, follow those steps:
 Here's a picture of the project running:
 
 ![Our white square running in a UWA](/media/luxe-uwa-output.jpg)
-{{< figure src="/media/luxe-uwa-output.jpg" title="Our white square running in a UWA" >}}
 
 ### Problems
 
