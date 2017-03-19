@@ -5,6 +5,9 @@ title: "WebAssembly basic example: Adding"
 layout: post
 tags: ["webassembly", "example"]
 ---
+I've seen some examples but none that worked out of the box, so I made one.
+Based on [the binary encoding spec](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md).
+
 Let's begin with seeing it work.  
 Write two numbers in the boxes below and then click on `=` to show the result.
 
@@ -13,6 +16,8 @@ Write two numbers in the boxes below and then click on `=` to show the result.
 <input id="arg2" style="text-align: right;" placeholder="integer" size="7" />
 <input type="submit" value="=" onclick="showRes()"/>
 <i id="result">integer</i>
+
+**Note**: if it doesn't do anything, pleas check your browser for compatibility with WebAssembly, eg open the console and type `WebAssembly`, if it outputs `undefined` your browser doesn't support/dosen't have enabled WebAssembly
 
 Pretty basic huh?  
 Well, here's the kicker: the result was calculated with [WebAssembly](http://webassembly.org/).
