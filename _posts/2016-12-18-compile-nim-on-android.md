@@ -35,9 +35,11 @@ passL:"/data/data/com.termux/files/usr/lib/libandroid-glob.so"
 #### in `lib/posix/posix.nim`
 - line 1618: `when not defined(macosx) and not defined(android):`
 - line 278: `when defined(macosx) or defined(android):`
+
 #### in lib/pure/osproc.nim
 - `bin/sh -> sh`
 
+Done!
 ---
 
 Prereqs
