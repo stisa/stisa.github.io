@@ -16,6 +16,8 @@ In this post I will try to list and explain the steps I took to get nim to compi
 is very diverse, I can't guarantee that these steps will work nor that your phone won't explode/implode or otherwise  
 malfunction, but root is not necessary so the worst that could happen should be that you waste 100 MB or so for the terminal emulator.  
 
+---
+
 **update:** I found out that glob is available as a package on termux, so here are some tentative instructions :
 ### Install glob
 ```
@@ -35,6 +37,8 @@ passL:"/data/data/com.termux/files/usr/lib/libandroid-glob.so"
 - line 278: `when defined(macosx) or defined(android):`
 #### in lib/pure/osproc.nim
 - `bin/sh -> sh`
+
+---
 
 Prereqs
 -------
