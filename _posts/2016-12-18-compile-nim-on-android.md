@@ -18,6 +18,10 @@ malfunction, but root is not necessary so the worst that could happen should be 
 
 ---
 
+**update2:** some more discussion on this on [nim forums](https://forum.nim-lang.org/t/2891) and [github](https://github.com/nim-lang/Nim/pull/5646)
+
+---
+
 **update:** I found out that glob is available as a package on termux, so here are some tentative instructions :
 ### Install glob
 ```
@@ -40,6 +44,7 @@ passL:"/data/data/com.termux/files/usr/lib/libandroid-glob.so"
 - `bin/sh -> sh`
 
 Done!
+
 ---
 
 Prereqs
